@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { getBundle } from '../src/bundle';
 
-const SITE = 'https://nchc-bio.github.io/inference-calculator/';
+const SITE = 'https://nchcbio.github.io/inference-calculator/';
 // jsdom gives import.meta.url an http scheme, so resolve from the working directory (repo root or packages/web).
 const webDir = existsSync(join(process.cwd(), 'index.html')) ? process.cwd() : join(process.cwd(), 'packages', 'web');
 const file = (p: string) => join(webDir, p);

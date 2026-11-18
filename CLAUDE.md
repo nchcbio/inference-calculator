@@ -29,7 +29,7 @@ Single test: `pnpm vitest run packages/core/test/solve.test.ts` or `pnpm vitest 
 
 CI (`.github/workflows/ci.yml`) runs: `typecheck` → `data:build` → `test` → `web:build` → `calibrate`. `web:e2e` is local only (needs browsers).
 
-CD (`.github/workflows/deploy.yml`): every push to `main` reruns `typecheck` and `test`, builds the site and publishes `packages/web/dist` to GitHub Pages (`https://nchc-bio.github.io/inference-calculator/`). Needs the one-time repo setting Settings → Pages → Source: GitHub Actions.
+CD (`.github/workflows/deploy.yml`): every push to `main` reruns `typecheck` and `test`, builds the site and publishes `packages/web/dist` to GitHub Pages (`https://nchcbio.github.io/inference-calculator/`). Needs the one-time repo setting Settings → Pages → Source: GitHub Actions.
 
 ## Architecture
 
