@@ -454,7 +454,7 @@ function PlatformList({ctx,rows,setRows,platforms,openKey,setOpenKey,bestKey,inC
 const SERIES={light:['#2a78d6','#eb6834','#1baf7a','#eda100','#e87ba4'],dark:['#3987e5','#d95926','#199e70','#c98500','#d55181']};
 const DarkCtx=React.createContext(false);
 const ThemeCtx=React.createContext({mode:'system',setMode:()=>{}});
-const GITHUB='https://github.com/NCHC-bio/inference-calculator';
+const GITHUB='https://github.com/nchcbio/inference-calculator';
 const ISERVICE='https://iservice.nchc.org.tw/nchc_service/index.php';
 const MODES={system:['跟隨系統',DesktopOutlined],light:['淺色',SunOutlined],dark:['深色',MoonOutlined]};
 function ThemeButton(){const {mode,setMode}=React.useContext(ThemeCtx);const Ic=MODES[mode][1];const [menu,setMenu]=useState(false);const [tip,setTip]=useState(false);

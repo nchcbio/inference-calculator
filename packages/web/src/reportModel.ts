@@ -1,5 +1,5 @@
 /** The project's GitHub repository (support requests and bug reports for imported models; issue #17). */
-export const GITHUB_REPO = 'https://github.com/NCHC-bio/inference-calculator';
+export const GITHUB_REPO = 'https://github.com/nchcbio/inference-calculator';
 
 /** Reason text cap: the whole link stays far below the ~8 KB URL limit GitHub accepts. */
 export const REPORT_REASON_MAX = 1500;
