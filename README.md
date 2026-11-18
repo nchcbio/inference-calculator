@@ -4,7 +4,7 @@
 
 **國網推論算力計算機：這個推論工作負載，在國網每一種機台上要幾張卡？**
 
-[![Website](https://img.shields.io/badge/website-nchc--bio.github.io%2Finference--calculator-1677FF?logo=githubpages&logoColor=white)](https://nchc-bio.github.io/inference-calculator/)
+[![Website](https://img.shields.io/badge/website-nchcbio.github.io%2Finference--calculator-1677FF?logo=githubpages&logoColor=white)](https://nchcbio.github.io/inference-calculator/)
 ![TypeScript](https://img.shields.io/badge/TypeScript-7.0-3178C6?logo=typescript&logoColor=white)
 ![Node](https://img.shields.io/badge/node-24-5FA04E?logo=nodedotjs&logoColor=white)
 ![pnpm](https://img.shields.io/badge/pnpm-12.9.1-F69220?logo=pnpm&logoColor=white)
@@ -12,9 +12,9 @@
 ![Models](https://img.shields.io/badge/models-14-2A6DB2)
 ![Status](https://img.shields.io/badge/status-core%20%C2%B7%20web%20done%20%C2%B7%20MCP%20pending-orange)
 
-[![國網推論算力計算機](packages/web/public/og-image.png)](https://nchc-bio.github.io/inference-calculator/)
+[![國網推論算力計算機](packages/web/public/og-image.png)](https://nchcbio.github.io/inference-calculator/)
 
-**[線上使用 →](https://nchc-bio.github.io/inference-calculator/)**
+**[線上使用 →](https://nchcbio.github.io/inference-calculator/)**
 
 </div>
 
@@ -65,7 +65,7 @@ pnpm web:e2e       # 以 Playwright 在桌面與手機尺寸跑真實瀏覽器�
 ### 部署
 
 - **CI**（[ci.yml](.github/workflows/ci.yml)）：每次 push 與 PR 跑 `typecheck` → `data:build` → `test` → `web:build` → `calibrate`。`web:e2e` 需要瀏覽器，只在本機跑。
-- **CD**（[deploy.yml](.github/workflows/deploy.yml)）：push 到 `main` 時重跑 `typecheck` 與 `test`，再把 `packages/web/dist` 發布到 GitHub Pages：<https://nchc-bio.github.io/inference-calculator/>。第一次使用前，repo 管理員要在 Settings → Pages 把 Source 設為 GitHub Actions。
+- **CD**（[deploy.yml](.github/workflows/deploy.yml)）：push 到 `main` 時重跑 `typecheck` 與 `test`，再把 `packages/web/dist` 發布到 GitHub Pages：<https://nchcbio.github.io/inference-calculator/>。第一次使用前，repo 管理員要在 Settings → Pages 把 Source 設為 GitHub Actions。
 - 連結預覽（Open Graph／Twitter）、`robots.txt` 與 `sitemap.xml` 在 [packages/web/public/](packages/web/public/)；預覽圖 `og-image.png` 是真實網站畫面的截圖，也可以上傳到 repo 的 Settings → Social preview。
 
 ## 🗺️ 架構
