@@ -541,7 +541,7 @@ describe('HfImportDrawer', () => {
     const link = within(alert).getByTestId('hf-report');
     expect(link).toHaveTextContent('回報這個錯誤');
     const url = new URL(link.getAttribute('href')!);
-    expect(url.origin + url.pathname).toBe('https://github.com/NCHC-bio/inference-calculator/issues/new');
+    expect(url.origin + url.pathname).toBe('https://github.com/nchcbio/inference-calculator/issues/new');
     expect(url.searchParams.get('template')).toBe('unsupported-model.yml');
     expect(url.searchParams.get('title')).toBe('Import error: test-org/x');
     expect(url.searchParams.get('repo')).toBe('test-org/x');
